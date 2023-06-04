@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <style>
+            table
+            {
+                width: 50%;
+                border-collapse: collapse;
+                background-color: pink;
+            }
+            td,th{
+                
+                text-align: center;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container">
+        <table cellpadding="5">
+            <tr style="text-align: center;">
+                <td>FirstName</td>
+                <td><input type="text" name="fn" id="fn"></td>
+                <td id="val1" style="color: red;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Last Name</td>
+                <td><input type="text" name="fn" id="ln"></td>
+                <td id="val2" style="color: red;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Email</td>
+                <td><input type="text" name="fn" id="em"></td>
+                <td id="val3" style="color: red;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Password</td>
+                <td><input type="password" name="fn" id="ps"></td>
+                <td id="val4" style="color: red;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Re-enter Password</td>
+                <td><input type="password" name="fn" id="rps"></td>
+                <td id="val5" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Gender</td>
+                <td>Male<input type="radio" value="male" name="gd" id="gd"></td>
+                <td id="val6" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td>Female<input type="radio" value="male" name="gd" id="gd"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Age</td>
+                <td><input type="text" name="fn" id="ag"></td>
+                <td id="val7" style="color: red;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Phone Number</td>
+                <td><input type="text" name="fn" id="ph"></td>
+                <td id="val8" style="color: red;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Address</td>
+                <td><input type="text" name="fn" id="ad"></td>
+                <td id="val9" style="color: red;"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>State</td>
+                <td><input type="text" name="fn" id="st"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>Country</td>
+                <td> <select name="country" id="country">
+                    <option value="select">Choose your country</option>
+                    <option>India</option>
+                    <option>France</option>
+                    <option>America</option>
+                    <option>Australia</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Languages Known</td>
+                <td><input type="checkbox" id="eng">English <input type="checkbox" id="kd">Kannada <input type="checkbox" id="hd">Hindi <input type="checkbox" id="tel">Telugu</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox"> I declare all the details given are true</td>
+            </tr>
+            <tr style="align-items: end;">
+                <td colspan="2">Log in to <a href="#">Ethnus</a> website</td>
+            </tr>
+            </table>
+            <div class="mx-5 px-5"><input type="button" style="background-color: red;" value="Register" onclick="func()"></div>
+        </div>
+        <script>
+            function func()
+            {
+                var x = document.getElementById("fn").value;
+                if(x=="")
+                    document.getElementById("val1").innerHTML = "POOR";
+                var x = document.getElementById("ln").value;
+                if(x=="")
+                    document.getElementById("val2").innerHTML = "POOR";
+                var x = document.getElementById("em").value;
+                if(x=="")
+                    document.getElementById("val3").innerHTML = "POOR";
+                var x = document.getElementById("ps").value;
+                var y = document.getElementById("rps").value;
+                if(x=="")
+                    document.getElementById("val4").innerHTML = "POOR";
+                if(x!=y)
+                    document.getElementById("val5").innerHTML = "MISMATCH";
+                var x = document.getElementById("gd").value;
+                if(x=="")
+                    document.getElementById("val6").innerHTML = "POOR";
+                var x = document.getElementById("ag").value;
+                if(x=="")
+                    document.getElementById("val7").innerHTML = "POOR";
+                var x = document.getElementById("ph").value;
+                if(x=="")
+                    document.getElementById("val8").innerHTML = "POOR";
+                var x = document.getElementById("ad").value;
+                if(x=="")
+                    document.getElementById("val9").innerHTML = "POOR";
+                
+                
+            }
+        </script>
+    </body>
+
+</html>
