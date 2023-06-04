@@ -1,0 +1,18 @@
+<html>
+    <body>
+        Enter string: <input type="text" placeholder="enter text" id="txt">
+        <button type="button" onclick="func()">Generate</button>
+        <p id="ans"></p>
+        <script>
+            function func()
+            {
+                var x = document.getElementById("txt").value;
+                var splitString = x.split(""); 
+ 
+                var reverseArray = splitString.reverse(); 
+                var ans = reverseArray.join("");
+                document.getElementById("ans").innerHTML = ans;
+            }
+        </script>
+    </body>
+</html>

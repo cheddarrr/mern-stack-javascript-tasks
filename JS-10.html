@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>Output visible in the console</b>
+    <script>
+        const array = [10, 20, 30, 40, 50, 60];
+        const concatArray = array.concat([70, 80, 90]);
+        console.log("Concat:", concatArray);
+
+        const copyWithinArray = array.copyWithin(0, 2);
+        console.log("CopyWithin:", copyWithinArray);
+
+        const mapArray = array.map((element) => element * 2);
+        console.log("Map:", mapArray);
+
+        const isSome = array.some((element) => element > 50);
+        console.log("Some:", isSome);
+
+        const filterArray = array.filter((element) => element % 20 === 0);
+        console.log("Filter:", filterArray);
+
+        const findElement = array.find((element) => element > 30);
+        console.log("Find:", findElement);
+
+        const findIndex = array.findIndex((element) => element === 40);
+        console.log("FindIndex:", findIndex);
+
+        const indexOfElement = array.indexOf(20);
+        console.log("IndexOf:", indexOfElement);
+
+        const lastIndexOfElement = array.lastIndexOf(40);
+        console.log("LastIndexOf:", lastIndexOfElement);
+
+        array.push(70);
+        console.log("Push:", array);
+
+        const poppedElement = array.pop();
+        console.log("Pop:", poppedElement);
+        console.log("Array after Pop:", array);
+
+        const shiftedElement = array.shift();
+        console.log("Shift:", shiftedElement);
+        console.log("Array after Shift:", array);
+
+    </script>
+    </html>
+</body>
+</html>

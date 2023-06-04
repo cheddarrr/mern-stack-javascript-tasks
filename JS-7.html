@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    1st Number: <input type="number" id="one" width="50px;"><br><br>
+    2nd Number: <input type="number" id="two" width="50px;">
+    <br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
+    <p id="demo"></p>
+    <script>
+        function add() {
+            var one = parseInt(document.getElementById('one').value);
+            var two = parseInt(document.getElementById('two').value);
+            var result;
+            result = one + two;
+            document.getElementById('demo').innerHTML = "The Result is " + result;
+        }
+        function sub() {
+            var one = parseInt(document.getElementById('one').value);
+            var two = parseInt(document.getElementById('two').value);
+            var result;
+            result = one - two;
+            document.getElementById('demo').innerHTML = "The Result is " + result;
+        }
+        function mul() {
+            var one = parseInt(document.getElementById('one').value);
+            var two = parseInt(document.getElementById('two').value);
+            var result;
+            result = one * two;
+            document.getElementById('demo').innerHTML = "The Result is " + result;
+        }
+        function div() {
+            var one = parseInt(document.getElementById('one').value);
+            var two = parseInt(document.getElementById('two').value);
+            var result;
+            result = one / two;
+            document.getElementById('demo').innerHTML = "The Result is " + result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function func1()
+        {
+            const d = new Date();
+            var st = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            var ans = d.getDate() + "/" + st[d.getMonth()] + "/" + d.getFullYear();
+            document.getElementById("dt1").innerHTML = ans;
+        }
+        function func2()
+        {
+            const d = new Date();
+            document.getElementById("tm1").innerHTML = d;
+        }
+    </script>
+    <button type="button" onclick="func1()">show date</button>
+        <p id="dt1"></p>
+        <br>
+        <button type="button" onclick="func2()">show Time</button>
+        <p id="tm1"></p>
+</body>
+</html>
